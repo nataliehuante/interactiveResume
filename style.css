@@ -67,12 +67,12 @@ p, h1, h2, h3, h4, h5, h6 {
     transition: background-color 0.3s, padding 0.3s;
     padding: 1rem 2rem;
     font-weight: bold;
-    color:#00473e;
+    color:#252525;
 }
 
 @media (max-width: 500px) {
     .main_header {
-        background-color: #00473e;
+        background-color: #252525;
         /* color: #d8d8d8; */
     }
     
@@ -142,7 +142,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .header_link {
     margin-right: 20px;
-    color: #00473e;
+    color: #252525;
     font-weight: bold;
     text-decoration: none;
     font-size: 1rem;
@@ -194,13 +194,13 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .intro_text h1 {
     font-size: 3.5rem;
-    color: #00473e;
+    color: #252525;
     margin-bottom: 1rem;
 }
 
 .intro_text p {
     font-size: 1rem;
-    color: #00473e;
+    color: #252525;
     margin-bottom: 2rem;
     line-height: 1rem;
     padding-left: 100px;
@@ -209,7 +209,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .btn {
     background: #faae2b;
-    color: #00473e;
+    color: #252525;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
@@ -221,7 +221,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .btn:hover {
-    background: #008573;
+    background: #b87808;
+    opacity: 0.8;
 }
 
 .project_btn {
@@ -274,7 +275,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .about {
-    background: #00473e;
+    background: #252525;
     /* color: #fff */
     color: #d8d8d8;
 }
@@ -341,10 +342,28 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-bottom: 1.75rem;
 }
 
-.about_grid_heading {
+.about_grid_item_hi {
+    display: flex;
+    flex-direction: column;   /* Stack items vertically */
+    /* justify-content:;  Vertically center the whole group */
+    height: 100%;             /* Or set a fixed/min height */
+    text-align: left;
+    margin-top: 10%;
+}
+
+.about_grid_heading_center {
     font-size: 1.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     color: white;
+    text-align: center;
+    /* text-decoration: underline; */
+}
+
+.about_grid_heading_left {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+    color: white;
+    text-align: left;
     /* text-decoration: underline; */
 }
 
@@ -421,15 +440,31 @@ p, h1, h2, h3, h4, h5, h6 {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-left: 5%;
 }
+
+.skills_category {
+    margin-bottom: 1.5rem;
+}
+
+.skills_category h4 {
+    color: #e7820f;
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-bottom: 0.6rem;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 0.75rem;
+}
+
 
 .about_grid_skills_item {
     padding: 0.25rem 0.5rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    background: #ec5f7b;
+    margin-right: 0.5rem;
+    margin-bottom: 0.15rem;
+    font-size: 1rem;
+    /* background: #ec5f7b; */
     color: white;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .about_grid_coursework_item {
@@ -441,6 +476,77 @@ p, h1, h2, h3, h4, h5, h6 {
     color: white;
     border-radius: 5px;
 }
+
+
+.experience_card {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.experience_logo {
+    width: 300px;              /* Fixed width for logo column */
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;   /* Horizontal centering */
+    /* align-items: center;       Vertical centering */
+    align-items: flex-start;   /* Move to the top */
+
+    padding-top: 0.5rem;       /* Small cushion from the top */
+}
+
+.experience_logo img {
+    width: 280px;
+    height: 85px;
+    object-fit: contain;
+}
+
+.experience_content{
+    flex:1;
+}
+
+.experience_content h4{
+    margin:0;
+    font-size:1.3rem;
+    font-weight:700;
+}
+
+.experience_company_date{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+    margin:.35rem 0 1rem;
+}
+
+.company {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.date {
+    font-size: 0.95rem;   /* Only slightly smaller */
+    font-weight: 700;
+    color: #868686;
+}
+
+.experience_description{
+    margin:0;
+    padding-left:1.2rem;
+}
+
+.experience_description li{
+    margin-bottom:.6rem;
+    line-height:1.6;
+}
+
+
+
+
+
 .about_experience_section {
     /* align-items: center; */
     text-align: center;
@@ -572,7 +678,7 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-top: 4rem;
 }
 .contact {
-    background: #00473e;
+    background: #252525;
     color: #d8d8d8;
     padding-bottom: 3rem;
 }
@@ -636,7 +742,7 @@ input, textarea {
 
 button {
     background-color: #faae2b;
-    color: #00473e;
+    color: #252525;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bold;
@@ -648,7 +754,8 @@ button {
 }
 
 button:hover {
-    background-color: #008573;
+    background-color: #b87808;
+    opacity: 0.8;
 }
 
 .confirmation_message {

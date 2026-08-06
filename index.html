@@ -15,8 +15,12 @@
   <link rel="icon" type="image" href="./images/nat_logo.png">
 
 </head>
+
+
 <body>
-    <header class="main_header"> <!-- HEADER -->
+
+    <!-------------------------------------------------------------Header----------------------------------------->
+    <header class="main_header"> 
         <div class="header_content">
             <div class="header_logo_container"> <!-- logo (picture of me)-->
                 <div class="header_logo_image_container">
@@ -35,17 +39,23 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section id="home" class="intro_section"> <!-- Intro Section -->
+        <!-------------------------------------------------------------Intro Section----------------------------------------->
+        <section id="home" class="intro_section"> 
             <div class="intro_content">
+
+                <!---Intro Message--->
                 <div class="intro_text">
                     <h1>Hi, I'm Natalie Huante</h1>
                     <p class="intro_text_description">A Computer Science and Game Development Student looking for opportunities to grow through hands-on learning!</p>
+                    <a href="#experience" class="btn btn_theme">View Experience</a>
                     <a href="#projects" class="btn btn_theme">View Projects</a>
                     <h1 class="title_arrow">&#8595</h1>
                 </div>
 
-                <div class="social_bar"> <!-- Social Bar -->
+                <!---Socials Bar--->
+                <div class="social_bar"> 
                     <div class="social_icon">
                       <a href="https://www.linkedin.com/in/nataliehuante/" class="social_icon_link" rel="noreferrer" target="_blank">
                         <img src="./images/linkedIn_logo.png" alt="linkedin" class="social_icon_logo">
@@ -65,13 +75,21 @@
                   </div>
             </div>
         </section>
-        <section id="about" class="about"> <!-- About Section -->
-            <div class="about_intro"> <!-- section introduction -->
+
+
+        <!-------------------------------------------------------------About Me Section----------------------------------------->
+        <section id="about" class="about"> 
+
+            <!---Title--->
+            <div class="about_intro"> 
                 <h2 class="section_title white_section_title">About Me</h2>
                 <hr class="section_title_line">
-                <p class="section_intro_description">A little about what I do, what I enjoy, and my some of my current skills</p>
             </div>
+
+            <!---Initial Grid--->
             <section class="about_grid">
+
+                <!---My Images--->
                 <div class="about_grid_item">
                     <div class="gallery_container">
                         <div class="gallery">
@@ -84,104 +102,270 @@
                         </div>
                     </div>
                 </div>
-                <div class="about_grid_item"> <!-- About Me -->
-                    <h3 class="about_grid_heading">Hey!</h3>
+
+                <!---Intro Paragraph--->
+                <div class="about_grid_item_hi"> <!-- About Me -->
+                    <h3 class="about_grid_heading_left">Hi!</h3>
                     <p class="aboutme_paragraph">
-                        I'm Natalie and I've recently graduated from Chapman University with my Bachelors in Computer Science. But let's dive into who I really am beyond the textbooks and coding.
-                        I grew up in Santa Ana, CA, along with my older brother and younger sister, in a bilingual Mexican household, surrounded by a large and supportive family. As a first-generation 
-                        student, I have adapted to many new environments as I navigated collegiate life. My upbringing has instilled in me values of hard work and dedication. Whether it's in academics, athletics, 
+                        I'm Natalie and I've recently graduated from Chapman University with my Masters in Computer Science. 
+                        I grew up in Santa Ana, CA, as a middle child in a bilingual Mexican household, surrounded by a large (and sometimes loud) family. As a first-generation 
+                        student, I have adapted to many new environments and a quick-learner. My upbringing taught me the values of hard work, dedication, and drive. In academics, athletics, 
                         personal pursuits, or relationships, I believe in giving my all. I'm also big on building strong connections, be it with partners, friends, or co-workers. 
                     </p>
                     <p class="aboutme_paragraph_two">
-                        In my free time, you'll find me enjoying all sorts of different hobbies, like losing myself in a good book or hitting the trails for a hike or a chill paddleboard session. I might be trying 
-                        a new coffee shop on the way to a workout - recently tennis and pickleball have been my favorites. Oh, and let's not forget my inner gaming nerd.
-                        Anyways, that's a bit about me—let's chat soon!
+                        In my free time, I enjoy all sorts of hobbies, like losing myself in a good book or hitting the trails for a hike or a chill paddleboard session. I might be trying 
+                        a new coffee shop on the way to a workout - recently tennis and pickleball have been my favorites. Oh, and of course my inner gaming nerd.
+                        Anyways, that's a bit about me. Let's chat soon!
                     </p>
                 </div>
-                <div class="about_grid_item"> <!-- Skills -->
-                    <h3 class="about_grid_heading">My Skills</h3>
-                    <ul class="about_grid_skills">
-                        <li class="about_grid_skills_item">HTML</li>
-                        <li class="about_grid_skills_item">CSS</li>
-                        <li class="about_grid_skills_item">JavaScript</li>
-                        <li class="about_grid_skills_item">C++</li>
-                        <li class="about_grid_skills_item">Java</li>
-                        <li class="about_grid_skills_item">Python</li>
-                        <li class="about_grid_skills_item">C#</li>
-                        <li class="about_grid_skills_item">SQL</li>
-                        <li class="about_grid_skills_item">MySQL</li>
-                        <li class="about_grid_skills_item">RStudio</li>
-                        <li class="about_grid_skills_item">Linux Terminal</li>
-                        <li class="about_grid_skills_item">MS Office</li>
-                        <li class="about_grid_skills_item">Github</li>
-                        <li class="about_grid_skills_item">Plastic SCM</li>
-                        <li class="about_grid_skills_item">Unity</li>
-                        <li class="about_grid_skills_item">Unreal</li>
-                        <li class="about_grid_skills_item">Arduino</li>
-                        <li class="about_grid_skills_item">Google Suite</li>
-                        <li class="about_grid_skills_item">Slack</li>
-                        <li class="about_grid_skills_item">Maya</li>
-                        <li class="about_grid_skills_item">Fusion 360</li>
-                        <li class="about_grid_skills_item">Canva</li>
-                        <li class="about_grid_skills_item">3D Printing & Design</li>
-                        <li class="about_grid_skills_item">Jenkins</li>
-                        <li class="about_grid_skills_item">Spanish Fluency</li>
-                    </ul>
+
+                <!---Technical Skills--->
+                <div class="about_grid_item">
+                    <!---Title--->
+                    <h3 class="about_grid_heading_center">Technical Skills</h3>
+                    <hr class="section_title_line">
+
+                    <!---Programming Languages Category--->
+                    <div class="skills_category">
+                        <h4>Programming Languages</h4>
+                        <ul class="coursework_list">
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>JavaScript</li>
+                            <li>HTML & CSS</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+
+                    <!---Testing & QA Category--->
+                    <div class="skills_category">
+                        <h4>Testing & QA Automation</h4>
+                        <ul class="coursework_list">
+                            <li>Pytest</li>
+                            <li>Selenium</li>
+                            <li>Appium</li>
+                            <li>Squish</li>
+                            <li>Test Automation Framework Development</li>
+                            <li>Parameterized Testing</li>
+                            <li>Test Fixtures</li>
+                        </ul>
+                    </div>
+
+                    <!---DevOps Category--->
+                    <div class="skills_category">
+                        <h4>DevOps & CI/CD</h4>
+                        <ul class="coursework_list">
+                            <li>Docker</li>
+                            <li>GitLab CI/CD</li>
+                            <li>Linux</li>
+                            <li>YAML & JSON</li>
+                            <li>Git Hooks</li>
+                            <li>Black</li>
+                            <li>Flake8</li>
+                        </ul>
+                    </div>
+
+                    <!---Dev Tools Category--->
+                    <div class="skills_category">
+                        <h4>Development Tools</h4>
+                        <ul class="coursework_list">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>GitLab</li>
+                            <li>Plastic SCM</li>
+                            <li>Jenkins</li>
+                            <li>Jira</li>
+                            <li>Jama</li>
+                        </ul>
+                    </div>
+
+                    <!---Frameworks Category--->
+                    <div class="skills_category">
+                        <h4>Frameworks & Technologies</h4>
+                        <ul class="coursework_list">
+                            <li>Unity</li>
+                            <li>Unreal Engine</li>
+                            <li>MySQL</li>
+                            <li>Arduino</li>
+                        </ul>
+                    </div>
+
+                    <!---Practices Category--->
+                    <div class="skills_category">
+                        <h4>Software Engineering Practices</h4>
+                        <ul class="coursework_list">
+                            <li>Object-Oriented Programming (OOP)</li>
+                            <li>CI/CD Workflows</li>
+                            <li>Code Reviews</li>
+                            <li>Merge Requests</li>
+                            <li>Branch Management</li>
+                            <li>Modular Software Design</li>
+                            <li>Debugging & Troubleshooting</li>
+                            <li>Scalable Test Automation</li>
+                            <li>Configuration Management</li>
+                        </ul>
+                    </div>
+
+                    <!---Game Dev Category--->
+                    <div class="skills_category">
+                        <h4>3D & Game Development</h4>
+                        <ul class="coursework_list">
+                            <li>Autodesk Maya</li>
+                            <li>Fusion 360</li>
+                            <li>3D Printing & Design</li>
+                        </ul>
+                    </div>
+
+                    <!---Spoken Languages Category--->
+                    <div class="skills_category">
+                        <h4>Languages</h4>
+                        <ul class="coursework_list">
+                            <li>English (Native)</li>
+                            <li>Spanish (Fluent)</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="about_grid_item"><!-- Coursework -->
-                    <h3 class="about_grid_heading">Relevant Courses</h3>
-                    <ul class="about_grid_skills">
-                        <li class="about_grid_coursework_item">Object Oriented Programming</li>
-                        <li class="about_grid_coursework_item">Data Structures & Algorithms</li>
-                        <li class="about_grid_coursework_item">Multivariable Calculus</li>
-                        <li class="about_grid_coursework_item">Linear Algebra</li>
-                        <li class="about_grid_coursework_item">Unity Programming</li>
-                        <li class="about_grid_coursework_item">Unreal Game Engine</li>
-                        <li class="about_grid_coursework_item">Level Design</li>
-                        <li class="about_grid_coursework_item">Computer Graphics</li>
-                        <li class="about_grid_coursework_item">iOS Application Development</li>
-                        <li class="about_grid_coursework_item">Computer Architecture</li>
-                        <li class="about_grid_coursework_item">Social & Ethical Issues in Computing</li>
-                        <li class="about_grid_coursework_item">Ethical Foundations of Engineering</li>
-                        <li class="about_grid_coursework_item">Artifical Intelligence</li>
-                        <li class="about_grid_coursework_item">Collaborative Game Development</li>
-                        <li class="about_grid_coursework_item">Operating Systems</li>
-                        <li class="about_grid_coursework_item">Programming Languages</li>
-                        <li class="about_grid_coursework_item">Algorithm Analysis</li>
-                        <li class="about_grid_coursework_item">Database Management</li>
-                        <li class="about_grid_coursework_item">Statistical Machine Learning</li>
-                        <li class="about_grid_coursework_item">Innovation, Product Design, and Development</li>
-                    </ul>
+
+
+                <!---Relevant Coursework--->
+                <div class="about_grid_item">
+                    <!---Title--->
+                    <h3 class="about_grid_heading_center">Relevant Coursework</h3>
+                    <hr class="section_title_line">
+
+                    <!---SWE Courses--->
+                    <div class="skills_category">
+                        <h4>Software Engineering</h4>
+                        <ul class="coursework_list">
+                            <li>Object-Oriented Programming</li>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Algorithm Analysis</li>
+                            <li>Programming Languages</li>
+                            <li>Operating Systems</li>
+                            <li>Computer Architecture</li>
+                            <li>Computer Networks</li>
+                            <li>Database Management</li>
+                            <li>High Performance Computing</li>
+                        </ul>
+                    </div>
+
+                    <!---AI/DS Courses--->
+                    <div class="skills_category">
+                        <h4>Artificial Intelligence & Data Science</h4>
+                        <ul class="coursework_list">
+                            <li>Artificial Intelligence</li>
+                            <li>Advanced Artificial Intelligence</li>
+                            <li>Statistical Machine Learning</li>
+                            <li>Text Mining & Natural Language Processing</li>
+                            <li>Time Series Analysis</li>
+                        </ul>
+                    </div>
+
+                    <!---Systems Courses--->
+                    <div class="skills_category">
+                        <h4>Systems & Computing</h4>
+                        <ul class="coursework_list">
+                            <li>High-Performance Computing</li>
+                            <li>Human-Centered Computing</li>
+                            <li>iOS Application Development</li>
+                            <li>Computer Architecture</li>
+                            <li>Digital Logic Design</li>
+                        </ul>
+                    </div>
+
+                    <!---Graphics/Game Dev Courses--->
+                    <div class="skills_category">
+                        <h4>Graphics & Game Development</h4>
+                        <ul class="coursework_list">
+                            <li>Computer Graphics</li>
+                            <li>Computer Graphics & Computational Geometry</li>
+                            <li>Unity Programming</li>
+                            <li>Unreal Game Engine</li>
+                            <li>Game Development</li>
+                            <li>Collaborative Game Development</li>
+                        </ul>
+                    </div>
+
+                    <!---Math Courses--->
+                    <div class="skills_category">
+                        <h4>Mathematics</h4>
+                        <ul class="coursework_list">
+                            <li>Discrete Mathematics</li>
+                            <li>Linear Algebra</li>
+                            <li>Multivariable Calculus</li>
+                        </ul>
+                    </div>
                 </div>
+
+
                 
                 
             </section>
-            <div id="experience" class="about_experience_section"> <!-- Experience History-->
-                <h3 class="about_grid_heading">Experience</h3>
+
+
+            <!-------------------------------------------------------------Experience History----------------------------------------->
+            <div id="experience" class="about_experience_section"> 
+                <!---Title--->
+                <h3 class="about_grid_heading_center">Experience</h3>
                 <hr class="section_title_line">
-                <ul class="about_grid_experience">
+
+                <!---Experience Cards Grid--->
+                <ul class="about_grid_experience"> 
+
+                    <!---Panasonic Internship Card--->
                     <li class="about_grid_exp_item">
-                        <div class="exp_item_title">
-                            <span>Incoming Software Test Engineering Intern (Summer 2025), Panasonic Avionics</span>
-                            <span>(May 2025 - August 2025)</span>
-                        </div>  
-                        <div class="exp_item_bullets">
-                            <p class="exp_item_descr">⇢ In depth investigation of software issues </p>
-                            <p class="exp_item_descr">⇢ Testing the development of In-Flight Entertainment and/or Global Communication Systems</p>
-                            <p class="exp_item_descr">⇢ Develop solutions to meet unique fleet, brand, operations, and business requirements </p>
-                            <p class="exp_item_descr">⇢ Consider and navigate the overall project life cycle of Panasonic Avionics products </p>
+                        <div class="experience_card">
+                            <!---Logo--->
+                            <div class="experience_logo">
+                                <img src="images/PAC_Logo.png" alt="Panasonic Avionics Logo">
+                            </div>
+                            <!---Description--->
+                            <div class="experience_content">
+                                <!---Job Title--->
+                                <h4>Software Engineering Intern (Test Automation)</h4>
+                                <!---Company Name & Dates--->
+                                <div class="experience_company_date">
+                                    <span class="company">Panasonic Avionics Corporation</span>
+                                    <span class="date">May 2025 – May 2026</span>
+                                </div>
+                                <!---Job Description--->
+                                <ul class="experience_description">
+                                    <li>Contributed to automation frameworks, test infrastructure, and CI/CD workflows supporting airline in-flight entertainment and seatback systems.</li>
+                                    <li>Refactored and enhanced 100+ automation scripts while participating in 60+ code reviews to improve maintainability, scalability, and execution reliability across multiple airline frameworks.</li>
+                                    <li>Collaborated in an Agile development environment using Git and GitLab workflows for version control, code integration, and subtree/submodule management across 6+ shared repositories.</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
+
+                    <!---Stage Plus Card--->
                     <li class="about_grid_exp_item">
-                        <div class="exp_item_title">
-                            <span>Office Administrative Assistant, Stage Plus Inc.</span>
-                            <span>(August 2015 - Present)</span>
-                        </div>  
-                        <div class="exp_item_bullets">
-                            <p class="exp_item_descr">⇢ Assist in administrative tasks such as managing filing systems, payroll, employee input, etc.
-                            </p>
+                        <div class="experience_card">
+                            <!---Logo--->
+                            <div class="experience_logo">
+                                <img src="images/StagePlus_Logo.png" alt="Stage Plus Inc. Logo">
+                            </div>
+                            <!---Description--->
+                            <div class="experience_content">
+                                <!---Job Title--->
+                                <h4>Office Administrative Assistant</h4>
+                                <!---Company Name & Dates--->
+                                <div class="experience_company_date">
+                                    <span class="company">Stage Plus Inc.</span>
+                                    <span class="date">August 2015 - June 2025</span>
+                                </div>
+                                <!---Job Description--->
+                                <ul class="experience_description">
+                                    <li>Supported day-to-day business operations by assisting with administrative tasks, filing systems, payroll processing, employee records, and internal communications.</li>
+                                    <li>Maintained organized documentation and assisted with operational processes to support a small business team.</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
+
+                    <!---Graduate Student Instructor Card--->
                     <li class="about_grid_exp_item">
                         <div class="exp_item_title">
                             <span>Graduate Student Instructor, Chapman University</span>
@@ -299,7 +483,7 @@
             </div>
 
             <div class="about_experience_section"> <!-- Education History-->
-                <h3 class="about_grid_heading">Education</h3>
+                <h3 class="about_grid_heading_center">Education</h3>
                 <hr class="section_title_line">
                 <ul class="about_grid_experience">
                     <li class="about_grid_exp_item edu_list_row">
@@ -346,6 +530,11 @@
 
             
         </section>
+
+
+
+
+
         <section id="projects" class="projects"> <!-- PROJECTS -->
             <div class="projects_intro"> <!-- section introduction -->
                 <h2 class="section_title">Projects</h2>
