@@ -483,6 +483,7 @@ p, h1, h2, h3, h4, h5, h6 {
     gap: 2rem;
     padding: 2rem 0;
     border-bottom: 1px solid #ddd;
+    flex-wrap:wrap;
 }
 
 .experience_logo {
@@ -498,8 +499,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .experience_logo img {
-    width: 280px;
-    height: 85px;
+    max-height: 200px;
+    max-width: 250px;
     object-fit: contain;
 }
 
