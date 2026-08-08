@@ -1,24 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;500&family=Source+Sans+3&display=swap');
 
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
+/* ==================================================
+   GLOBAL RESET & BASE STYLES
+   Sets consistent default styling across the website.
+   ================================================== */
+
+/* Include padding and borders when calculating element dimensions */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-/*
-2. Remove default margin
-*/
+/* Remove default browser margins from all elements */
 * {
     margin: 0;
 }
 
-/*
-Typographic tweaks!
-3. Add accessible line-height
-4. Improve text rendering
-*/
+/* Set global typography, spacing, and text rendering */
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -26,41 +23,31 @@ body {
     font-family: 'Source Sans 3', Arial, sans-serif;
 }
 
-/*
-5. Improve media defaults
-*/
+/* Prevent media from overflowing its container */
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
 }
 
-/*
-6. Remove built-in form typography styles
-*/
+/* Make form elements inherit the website's font */
 input, button, textarea, select {
     font: inherit;
 }
 
-/*
-7. Avoid text overflows
-*/
+/* Allow long text to wrap instead of overflowing */
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-/*
-8. Create a root stacking context
-*/
+/* Keep application root elements in their own stacking context */
 #root, #__next {
     isolation: isolate;
 }
 
-
+/* top header of website that stays in place as you scroll */
 .main_header {
-    /* background: #f2f7f5; */
-    background-color: #f2f7f5;
+    background-color: white;
     position: fixed;
-    /* position: static; */
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -70,14 +57,15 @@ p, h1, h2, h3, h4, h5, h6 {
     color:#252525;
 }
 
+/* on smaller screens, top header changes to dark background */
 @media (max-width: 500px) {
     .main_header {
         background-color: #252525;
-        /* color: #d8d8d8; */
     }
     
 }
 
+/* container for the header elements */
 .header_content {
     display: flex;
     justify-content: space-between;
@@ -86,9 +74,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 500px) {
     .header_content {
-        /* flex-direction: column; */
         justify-content: flex-start;
-        /* color: #d8d8d8; */
     }
     
 }
@@ -152,7 +138,7 @@ p, h1, h2, h3, h4, h5, h6 {
     .header_link {
         font-size: .9rem;
         margin-right: 8px;
-        color: #d8d8d8;
+        color: white;
     }
     
 }
@@ -237,7 +223,6 @@ p, h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    /* transform: translateY(-50%); */
     padding: 1rem .5rem;
     padding-right: 0;
     padding-top: 0;
@@ -276,8 +261,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .about {
     background: #252525;
-    /* color: #fff */
-    color: #d8d8d8;
+    color: white;
 }
 
 .about_intro {
@@ -426,7 +410,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .aboutme_paragraph {
     font-size: 1.1rem;
-    color: #d8d8d8;
+    color: #ffffff;
     padding-right: 1rem;
 }
 
@@ -520,7 +504,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .experience_content h4{
     margin:0;
-    font-size:1.3rem;
+    font-size:1.4rem;
     font-weight:700;
 }
 
@@ -528,18 +512,17 @@ p, h1, h2, h3, h4, h5, h6 {
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
-
     margin:.35rem 0 1rem;
 }
 
 .company {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: var(--primary-color);
 }
 
 .date {
-    font-size: 1rem;   /* Only slightly smaller */
+    font-size: 1.1rem;   /* Only slightly smaller */
     font-weight: 700;
     color: #868686;
 }
@@ -547,6 +530,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .experience_description{
     margin:0;
     padding-left:1.2rem;
+    font-size: 0.9rem;
+
 }
 
 .experience_description li{
@@ -624,7 +609,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .exp_item_descr {
     font-size: .9rem;
     margin-left: 1rem;
-    color: #d8d8d8;
+    color: white;
     margin-left: 1rem;
     /* width: 90%; */
 }
@@ -691,7 +676,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .contact {
     background: #252525;
-    color: #d8d8d8;
+    color: white;
     padding-bottom: 3rem;
 }
 
@@ -779,7 +764,7 @@ button:hover {
 footer {
     background-color:black;
     /* background-color: #475d5b; */
-    color:  #d8d8d8;
+    color:  white;
     padding: 1rem 0;
     text-align: center;
 }
@@ -825,12 +810,12 @@ footer {
 .footer_line {
     margin: 20px 0;
     border: 0;
-    border-top: 1px solid #d8d8d8;
+    border-top: 1px solid white;
 }
 
 .small_print {
     font-size: 0.8rem;
-    color: #d8d8d8;
+    color: white;
 }
 
 .footer_left_par {
