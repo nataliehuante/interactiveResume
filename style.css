@@ -666,9 +666,13 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 
-/* .projects_grid_descr {
-    text-indent: 15px;
-} */
+.projects_grid_item h3 {
+    font-size: 1.4rem;
+}
+.projects_grid_descr {
+    /* text-indent: 15px; */
+    font-size: 1rem;
+}
 
 
 .title_arrow {
