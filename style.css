@@ -340,6 +340,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .about_grid_item {
     text-align: left;
     padding-bottom: 1.75rem;
+    padding-left: 4rem;
 }
 
 .about_grid_item_hi {
@@ -424,13 +425,13 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .aboutme_paragraph {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #d8d8d8;
     padding-right: 1rem;
 }
 
 .aboutme_paragraph_two {
-    padding-top: 1rem;
+    padding-top: 1.1rem;
     padding-right: 1rem;
 }
 
