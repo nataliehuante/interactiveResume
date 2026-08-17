@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Add any additional validation or processing here if needed
 
         // Send the form data to Formspree using Fetch API
-        fetch("https://formspree.io/f/xrgnekdz", {
+        fetch("https://formspree.io/f/xbgrzvoy", {
             method: "POST",
             body: new FormData(contactForm),
             headers: {
