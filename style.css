@@ -658,11 +658,23 @@ p, h1, h2, h3, h4, h5, h6 {
 .projects_grid_item {
     text-align: left;
     padding-bottom: 1.75rem;
+    max-height: 300px;
+    
 }
 
 .projects_grid_image {
     margin: auto;
     max-height: 300px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.projects_grid_item video,
+.projects_grid_item img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
     border-radius: 5px;
 }
 
