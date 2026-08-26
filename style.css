@@ -148,7 +148,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .intro_section {
-    background-color: #f2f7f5;
+    background-color: #f3f5f4;
     padding-top: 8rem;
     padding-bottom: 10rem;
     text-align: center;
@@ -292,7 +292,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .section_intro_description {
     padding-top: 10px;
-    font-size: .9rem;
+    font-size: 1.1rem;
     /* padding-left: 100px;
     padding-right: 100px; */
     width: 500px;
@@ -703,7 +703,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .contact_info {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 1rem 0;
 }
 
@@ -711,6 +711,10 @@ a[href$="Resume.pdf"]{
     content: "\1F4C4"; /* Unicode for PDF icon (you can use any other icon or custom content) */
     margin-right: 0.5em; /* Adjust spacing between icon and link text */
     color: #faae2b;
+}
+
+.resume_btn {
+    color: black !important;
 }
 
 a[href$="Resume.pdf"]::after{
@@ -721,10 +725,12 @@ a[href$="Resume.pdf"]::after{
 .contact_form_title {
     margin: auto;
     text-align: center;
+    font-size: 1.4rem;
 }
 
 .contact_form {
     margin-top: 20px;
+    font-size: 1.1rem;
 }
 
 form {
@@ -793,7 +799,7 @@ footer {
 
 
 .footer_left, .footer_right {
-    max-width: 45%;
+    max-width: 55%;
     text-align: left;
 }
 
@@ -814,7 +820,7 @@ footer {
 }
 
 .social_icon_logo {
-    width: 30px;
+    width: 50px;
     height: auto;
     transition: opacity 0.3s ease;
 }
@@ -830,12 +836,12 @@ footer {
 }
 
 .small_print {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: white;
 }
 
 .footer_left_par {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     max-width: 400px;
 }
 
