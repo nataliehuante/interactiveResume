@@ -658,7 +658,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .projects_grid_item {
     text-align: left;
     padding-bottom: 1.75rem;
-    max-height: 300px;
+    /* max-height: 300px; */
     
 }
 
