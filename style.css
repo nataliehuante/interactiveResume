@@ -185,10 +185,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .intro_text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #252525;
     margin-bottom: 2rem;
-    line-height: 1rem;
+    line-height: 1.22rem;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -719,7 +719,7 @@ a[href$="Resume.pdf"]{
 
 a[href$="Resume.pdf"]::after{
     content: "\1F4C4"; /* Unicode for PDF icon (you can use any other icon or custom content) */
-    margin-right: 0.5em; /* Adjust spacing between icon and link text */
+    margin-right: 0.1rem; /* Adjust spacing between icon and link text */
 }
 
 .contact_form_title {
