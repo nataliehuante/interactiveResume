@@ -1,4 +1,5 @@
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.getElementById("contact_form");
     const confirmationMessage = document.getElementById("confirmation_message");
